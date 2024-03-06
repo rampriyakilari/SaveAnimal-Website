@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Develop Simple Webpage Using HTML5</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="mycss.css" >
+  <style>
+    .bg-1 { 
+    background-color: #1abc9c;
+    color: #ffffff;
+  }
+  .bg-2 { 
+    background-color: #474e5d;
+    color: #ffffff;
+  }
+  .bg-3 { 
+    background-color: #ffffff;
+    color: #555555;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  #myimage{
+            position:absolute;
+            top: 1550px;
+            left:100px;
+            border:4px solid#000000;
+        }
+  </style>
+  <script>
+     $(document).ready(function(){
+    $("#myCarousel").carousel();
+    $(".item1").click(function(){
+    $("#myCarousel").carousel(0);
+    })
+    $(".item2").click(function(){
+    $("#myCarousel").carousel(1);
+    })
+    $(".item3").click(function(){
+    $("#myCarousel").carousel(2);
+    })
+    $(".left").click(function(){
+    $("#myCarousel").carousel("prev");
+    })
+    $(".right").click(function(){
+    $("#myCarousel").carousel("next");
+    })
+    });
+  </script>
+</head>
+<body>
+  <div>
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">SaveAnimals.com</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Get in Touch <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="subscribe.htm">Subscribe Us</a></li>
+                <li><a href="validate.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+              </ul>
+            </li>
+            <li><a href="#aboutus">AboutUs</a></li>
+            <li><a href="#contactus">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+      <div id="myCarousel" class="carousel slide">
+      <ol class="carousel-indicators">
+      <li class="item1 active"></li>
+      <li class="item2"></li>
+      <li class="item3"></li>
+      </ol>
+      <div class="carousel-inner" role="listitem">
+        <div class="item active">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1YgO6I5G_jubuq5BW4MpXa9VC1Y3JGZOzQ&usqp=CAU" alt="image1" width="100%" height="100%">
+       
+        </div>
+        <div class="item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDdUY_t-0eJTdknRDx71c8Ujf3tkoDFQs_6A&usqp=CAU" alt="image2" width="100%" height="100%">
+       
+        </div>
+        <div class="item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlcAMtM2iA-dVsVvQ9pvjk_f_lpUWa6b1TJg&usqp=CAU" alt="image3" width="100%" height="100%">
+        </div>
+
+  </div>
+  <a class="left carousel-control" href="#myCarousel" role="button">
+  <span class="glyphicon glyphicon-chevron-left" ariahidden="true"></span>
+  <span class="sr-only">Prev</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button">
+  <span class="glyphicon glyphicon-chevron-right" ariahidden="true"></span>
+  <span class="sr-only">Next</span>
+  </a>
+  </div>
+  </div>
+<div class="container-fluid bg-1 text-center">
+  <h3>Save Environment</h3>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpjS_iNnykcbGORo7arsSOY0uwZ0eDaRObVg&usqp=CAU" class="img-circle" alt="Bird" width="350" height="350">
+  <h3>Let's Make it togather</h3>
+</div>
+<div class="container-fluid bg-2 text-center">
+  <h3>Save Animals</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+  <a href="https://www.google.com/" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-search"></span> Search
+  </a>
+</div>
+<div class="container-fluid bg-3 text-center">    
+  <h3>Where does animals live?</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRozp6oj6UHo4MYB0Lmn5K6p0JPZkE0ArsO0g&usqp=CAU" alt="Image" width="350" height="300">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVEESg-wFHXzJ-SE-0ZeIWm7uTWxpXDTL2ug&usqp=CAU" alt="Image" width="350" height="300">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVO6ZnT3aFPqheA1n1_T0jgfzM8Q_OwyQJlQ&usqp=CAU" alt="Image" width="350" height="300">
+    </div>
+  </div>
+</div>
+<div id="aboutus" class="container">
+<h3>About Us</h3>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo nostrum nulla hic ipsa vel veritatis aut ratione, dolor provident iure consequatur dicta eligendi iste cupiditate placeat enim nisi. Maiores, vero.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident placeat perferendis quas assumenda praesentium aliquid, quo accusamus rem accusantium error voluptatibus dolores aliquam delectus esse asperiores totam nulla voluptas voluptates.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident placeat perferendis quas assumenda praesentium aliquid, quo accusamus rem accusantium error voluptatibus dolores aliquam delectus esse asperiores totam nulla voluptas voluptates.
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident placeat perferendis quas assumenda praesentium aliquid, quo accusamus rem accusantium error voluptatibus dolores aliquam delectus esse asperiores totam nulla voluptas voluptates.</p>
+  <img id="myimage"
+  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRXzH-KGluc5w-r_ErW4EnftgwcXB_9meGgw&usqp=CAU" height="200" width="250" alt="animal">
+</div>
+<section>
+    
+  <div class="jumbotron section-header">
+    <div class="container">
+      <h2 id="contactus">Contact Us</h2>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="row">
+      
+      <div class="contact-info">
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <i class="fas fa-home"></i>
+          </div>
+          
+          <div class="contact-info-content">
+            <h4>Address</h4>
+            <p>Hyderabad,<br/> Telangana, <br/>5xxxx0</p>
+          </div>
+        </div>
+        
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          
+          <div class="contact-info-content">
+            <h4>Phone</h4>
+            <p>91 + 9xxxxxxx52</p>
+          </div>
+        </div>
+        
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          
+          <div class="contact-info-content">
+            <h4>Email</h4>
+           <p>sample@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contact-form">
+        <form action="" id="contact-form">
+          <h2>Send Message</h2>
+          <div class="input-box">
+            <input type="text" required="true" name="">
+            <span>Full Name</span>
+          </div>
+          
+          <div class="input-box">
+            <input type="email" required="true" name="">
+            <span>Email</span>
+          </div>
+          
+          <div class="input-box">
+            <textarea required="true" name=""></textarea>
+            <span>Type your Message...</span>
+          </div>
+          
+          <div class="input-box">
+            <input type="submit" value="Send" name="">
+          </div>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</section>
+<div class="footer bg-2 text-center">
+  <h5>copyright@</h5>
+  <h6>@privacy policy</h6>
+
+</div>
+</body>
+</html>
